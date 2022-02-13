@@ -19,6 +19,16 @@
 		B4738F6727B9BEEF00626D82 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F6627B9BEEF00626D82 /* FavoriteViewController.swift */; };
 		B4738F6927B9BF2C00626D82 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F6827B9BF2C00626D82 /* NotificationViewController.swift */; };
 		B4738F6B27B9BF4D00626D82 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F6A27B9BF4D00626D82 /* ChatViewController.swift */; };
+		B4738F6D27B9C5F200626D82 /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F6C27B9C5F200626D82 /* CarDetailViewController.swift */; };
+		B4738F6F27B9C67B00626D82 /* Extension+CarsiewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F6E27B9C67B00626D82 /* Extension+CarsiewController.swift */; };
+		B4738F7127B9C76200626D82 /* AvailableCarsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F7027B9C76200626D82 /* AvailableCarsCollectionViewCell.swift */; };
+		B4738F7327B9C7C600626D82 /* CarBrandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F7227B9C7C600626D82 /* CarBrandCollectionViewCell.swift */; };
+		B4738F7527B9C90000626D82 /* CarBrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F7427B9C90000626D82 /* CarBrandModel.swift */; };
+		B4738F7727B9C93F00626D82 /* ExploreCarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F7627B9C93F00626D82 /* ExploreCarsModel.swift */; };
+		B4738F7927B9C98400626D82 /* PopularCarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F7827B9C98400626D82 /* PopularCarsModel.swift */; };
+		B4738F7B27B9C9C000626D82 /* CarInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F7A27B9C9C000626D82 /* CarInfoModel.swift */; };
+		B4738F7D27B9C9ED00626D82 /* CarDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F7C27B9C9ED00626D82 /* CarDetailModel.swift */; };
+		B4738F7F27B9CA7A00626D82 /* NetworkServiceFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4738F7E27B9CA7A00626D82 /* NetworkServiceFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +46,16 @@
 		B4738F6627B9BEEF00626D82 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		B4738F6827B9BF2C00626D82 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		B4738F6A27B9BF4D00626D82 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B4738F6C27B9C5F200626D82 /* CarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
+		B4738F6E27B9C67B00626D82 /* Extension+CarsiewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CarsiewController.swift"; sourceTree = "<group>"; };
+		B4738F7027B9C76200626D82 /* AvailableCarsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableCarsCollectionViewCell.swift; sourceTree = "<group>"; };
+		B4738F7227B9C7C600626D82 /* CarBrandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBrandCollectionViewCell.swift; sourceTree = "<group>"; };
+		B4738F7427B9C90000626D82 /* CarBrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBrandModel.swift; sourceTree = "<group>"; };
+		B4738F7627B9C93F00626D82 /* ExploreCarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCarsModel.swift; sourceTree = "<group>"; };
+		B4738F7827B9C98400626D82 /* PopularCarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCarsModel.swift; sourceTree = "<group>"; };
+		B4738F7A27B9C9C000626D82 /* CarInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoModel.swift; sourceTree = "<group>"; };
+		B4738F7C27B9C9ED00626D82 /* CarDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailModel.swift; sourceTree = "<group>"; };
+		B4738F7E27B9CA7A00626D82 /* NetworkServiceFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFile.swift; sourceTree = "<group>"; };
 		D69425E77F47C420A1917A4C /* Pods_CarsShoppingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarsShoppingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E95F0E7BB13066F781F79E /* Pods-CarsShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarsShoppingApp.release.xcconfig"; path = "Target Support Files/Pods-CarsShoppingApp/Pods-CarsShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +137,8 @@
 				B4738F6327B9BDA400626D82 /* DashboardControllers */,
 				B4738F4A27B9B4B700626D82 /* CarsViewController.swift */,
 				B4738F6127B9BB9900626D82 /* Dashboard.swift */,
+				B4738F6C27B9C5F200626D82 /* CarDetailViewController.swift */,
+				B4738F6E27B9C67B00626D82 /* Extension+CarsiewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -124,6 +146,8 @@
 		B4738F5D27B9BA0200626D82 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				B4738F7027B9C76200626D82 /* AvailableCarsCollectionViewCell.swift */,
+				B4738F7227B9C7C600626D82 /* CarBrandCollectionViewCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -131,6 +155,11 @@
 		B4738F5E27B9BA1100626D82 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B4738F7427B9C90000626D82 /* CarBrandModel.swift */,
+				B4738F7627B9C93F00626D82 /* ExploreCarsModel.swift */,
+				B4738F7827B9C98400626D82 /* PopularCarsModel.swift */,
+				B4738F7A27B9C9C000626D82 /* CarInfoModel.swift */,
+				B4738F7C27B9C9ED00626D82 /* CarDetailModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +176,7 @@
 		B4738F6027B9BA5600626D82 /* AppUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				B4738F7E27B9CA7A00626D82 /* NetworkServiceFile.swift */,
 			);
 			path = AppUtilities;
 			sourceTree = "<group>";
@@ -285,12 +315,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4738F7B27B9C9C000626D82 /* CarInfoModel.swift in Sources */,
+				B4738F7527B9C90000626D82 /* CarBrandModel.swift in Sources */,
+				B4738F7927B9C98400626D82 /* PopularCarsModel.swift in Sources */,
 				B4738F6527B9BE7300626D82 /* HomeViewController.swift in Sources */,
 				B4738F4B27B9B4B700626D82 /* CarsViewController.swift in Sources */,
+				B4738F7327B9C7C600626D82 /* CarBrandCollectionViewCell.swift in Sources */,
 				B4738F6B27B9BF4D00626D82 /* ChatViewController.swift in Sources */,
 				B4738F4727B9B4B700626D82 /* AppDelegate.swift in Sources */,
+				B4738F7F27B9CA7A00626D82 /* NetworkServiceFile.swift in Sources */,
+				B4738F7727B9C93F00626D82 /* ExploreCarsModel.swift in Sources */,
 				B4738F6927B9BF2C00626D82 /* NotificationViewController.swift in Sources */,
+				B4738F6D27B9C5F200626D82 /* CarDetailViewController.swift in Sources */,
+				B4738F6F27B9C67B00626D82 /* Extension+CarsiewController.swift in Sources */,
+				B4738F7127B9C76200626D82 /* AvailableCarsCollectionViewCell.swift in Sources */,
 				B4738F6227B9BB9900626D82 /* Dashboard.swift in Sources */,
+				B4738F7D27B9C9ED00626D82 /* CarDetailModel.swift in Sources */,
 				B4738F6727B9BEEF00626D82 /* FavoriteViewController.swift in Sources */,
 				B4738F4927B9B4B700626D82 /* SceneDelegate.swift in Sources */,
 			);
