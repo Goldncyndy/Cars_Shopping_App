@@ -155,21 +155,7 @@ class CarsViewController: UIViewController {
       productCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20)
       //productCollectionView.heightAnchor.constraint(equalToConstant: 80),
     ])
-    
-    //MARK: - BRANDCOLLECTIONVIEW CONSTRAINTS
-//    brandCollectionView.anchorWithConstantsToTop(top: searchBar.bottomAnchor,
-//                                                 left: view.leftAnchor,
-//                                                 bottom: view.bottomAnchor,
-//                                                 right: view.rightAnchor,
-//                                                 topConstant: 5, leftConstant: 20,
-//                                                 bottomConstant: 580, rightConstant: 0)
-//    brandCollectionView.heightAnchor.constraint(equalToConstant: 60).isActive = true
-    
-//    productCollectionView.anchorWithConstantsToTop(top: brandCollectionView.bottomAnchor,
-//                                                   left: view.leftAnchor,
-//                                                   bottom: view.bottomAnchor,
-//                                                   right: view.rightAnchor,
-//                                                   topConstant: 10, leftConstant: 20, bottomConstant: 20, rightConstant: 20)
+  
   }
 }
 

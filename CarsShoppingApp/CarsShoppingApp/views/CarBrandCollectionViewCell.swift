@@ -38,12 +38,9 @@ class CarBrandCollectionViewCell: UICollectionViewCell {
   func setUpViews() {
     addSubview(brandName)
     addSubview(productImageView)
+    //MARK: ADDING AND LAYOUT TO THE IMAGE VIEW
     productImageView.anchorWithConstantsToTop(top: topAnchor, left: leftAnchor, bottom: brandName.bottomAnchor, right: rightAnchor, topConstant: 6, leftConstant: 0, bottomConstant: 30, rightConstant: 0)
-    
-//    brandName.anchorWithConstantsToTop(top: productImageView.topAnchor, left: leftAnchor,
-//        bottom: productImageView.bottomAnchor, right: rightAnchor,
-//          topConstant: 70,leftConstant: 11,bottomConstant: 0, rightConstant: -10)
-    
+    //MARK: ADDING AND LAYOUT TO BRANDNAME
     brandName.topAnchor.constraint(equalTo: productImageView.topAnchor, constant: 65).isActive = true
     brandName.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.25).isActive = true
     brandName.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
