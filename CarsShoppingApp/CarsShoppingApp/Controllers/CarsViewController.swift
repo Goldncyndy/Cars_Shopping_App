@@ -146,7 +146,7 @@ class CarsViewController: UIViewController {
       brandCollectionView.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: 20),
       brandCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
       brandCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-      brandCollectionView.heightAnchor.constraint(equalToConstant: 100),
+      brandCollectionView.heightAnchor.constraint(equalToConstant: 110),
       //brandCollectionView.widthAnchor.constraint(equalToConstant: 50),
       
       productCollectionView.topAnchor.constraint(equalTo: brandCollectionView.bottomAnchor, constant: 20),
