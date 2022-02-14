@@ -78,7 +78,10 @@ class AvailableCarsCollectionViewCell: UICollectionViewCell {
   }()
   lazy var addButton: UIButton = {
     let button = UIButton()
-    button.layer.cornerRadius = 17
+    button.heightAnchor.constraint(equalToConstant: 40).isActive = true
+    button.widthAnchor.constraint(equalToConstant: 40).isActive = true
+    button.layer.cornerRadius = 20
+    button.layer.cornerRadius = 20
     button.backgroundColor = .black
     button.setTitleColor(.yellow, for: .normal)
     button.setTitle("+", for: .normal)
@@ -125,13 +128,13 @@ class AvailableCarsCollectionViewCell: UICollectionViewCell {
     addButton.anchorWithConstantsToTop(top: productRateView.bottomAnchor, left: leftAnchor,
                                        bottom: bottomAnchor,right: rightAnchor,topConstant: 0,leftConstant: 330,
                                        bottomConstant: 20, rightConstant: 0)
-    addButton.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.1).isActive = true
+    addButton.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.09).isActive = true
     addButton.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.1).isActive = true
     
-    NSLayoutConstraint.activate([
-      productRateLabel.bottomAnchor.constraint(equalTo: addButton.topAnchor, constant: -12),
-      productRateLabel.trailingAnchor.constraint(equalTo: productDetailsView.trailingAnchor, constant: -30)
-    ])
+    productRateLabel.anchorWithConstantsToTop(top: productBrandTextView.bottomAnchor, left: leftAnchor,
+                                             bottom: bottomAnchor,right: rightAnchor,topConstant: 0,leftConstant: 325,
+                                             bottomConstant: 70, rightConstant: 0)
+    productRateLabel.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.05).isActive = true
   }
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")

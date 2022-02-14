@@ -100,6 +100,8 @@ class CarsViewController: UIViewController {
     productCollectionView.register(AvailableCarsCollectionViewCell.self, forCellWithReuseIdentifier: "productId")
     brandCollectionView.register(CarBrandCollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
     setupConstraints()
+    productCollectionView.showsHorizontalScrollIndicator = false
+    productCollectionView.showsVerticalScrollIndicator = false
   }
   // MARK: - SETUP VIEWS FUNCTION
   func addDefaultViews() {
@@ -126,26 +128,34 @@ class CarsViewController: UIViewController {
       //MARK: - CONSTRAINTS FOR PAGETITLE LABEL
       cartIcon.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
       cartIcon.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-      cartIcon.heightAnchor.constraint(equalToConstant: 30),
-      cartIcon.widthAnchor.constraint(equalToConstant: 30),
+      cartIcon.heightAnchor.constraint(equalToConstant: 20),
+      cartIcon.widthAnchor.constraint(equalToConstant: 20),
       //MARK: - CONSTRAINTS FOR SEARCH BAR
       searchBar.topAnchor.constraint(equalTo: cartIcon.bottomAnchor, constant: 20),
       searchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
       searchBar.trailingAnchor.constraint(equalTo: searchButton.leadingAnchor, constant: -10),
       searchBar.heightAnchor.constraint(equalToConstant: 50),
       searchBar.widthAnchor.constraint(equalToConstant: 50),
-      //MARK: - BRANDCOLLECTIONVIEW CONSTRAINTS
+      
       //MARK: - CONSTRAINTS FOR SEARCH BUTTON
       searchButton.topAnchor.constraint(equalTo: cartIcon.bottomAnchor, constant: 20),
+      searchButton.leadingAnchor.constraint(equalTo: searchBar.trailingAnchor, constant: 10),
       searchButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
       searchButton.heightAnchor.constraint(equalToConstant: 50),
       searchButton.widthAnchor.constraint(equalToConstant: 50),
     ])
+    
+    //MARK: - BRANDCOLLECTIONVIEW CONSTRAINTS
     brandCollectionView.anchorWithConstantsToTop(top: searchBar.bottomAnchor,
-                                                 left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 20, leftConstant: 20, bottomConstant: 580, rightConstant: 0)
+                                                 left: view.leftAnchor,
+                                                 bottom: view.bottomAnchor,
+                                                 right: view.rightAnchor,
+                                                 topConstant: 0, leftConstant: 20,
+                                                 bottomConstant: 580, rightConstant: 0)
+    brandCollectionView.heightAnchor.constraint(equalToConstant: 100).isActive = true
     
     productCollectionView.anchorWithConstantsToTop(top: brandCollectionView.bottomAnchor,
-                                                   left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 20, leftConstant: 20, bottomConstant: 20, rightConstant: 20)
+                                                   left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 10, leftConstant: 20, bottomConstant: 20, rightConstant: 20)
   }
 }
 

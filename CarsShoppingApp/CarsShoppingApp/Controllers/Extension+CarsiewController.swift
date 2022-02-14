@@ -28,7 +28,8 @@ extension CarsViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         DispatchQueue.main.async {
           cell.configure(with: imageUrlString)
-          cell.brandName.text = self.cars?.makeList[indexPath.item].name
+          let carName = self.cars?.makeList[indexPath.item].name ?? ""
+          cell.brandName.text = "  "+carName
           cell.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.00)
           cell.layer.cornerRadius = cell.frame.size.height/2
         }
@@ -46,7 +47,7 @@ extension CarsViewController: UICollectionViewDataSource, UICollectionViewDelega
           cell.configure(with: imageUrlString)
           cell.productNametextView.text =   self.list?.result[indexPath.item].title
           cell.productBrandTextView.text =  self.list?.result[indexPath.item].sellingCondition
-          cell.productPriceTextView.text = self.list?.result[indexPath.item].mileageUnit
+          cell.productPriceTextView.text = self.list?.result[indexPath.item].city
           
         }
       }
@@ -55,9 +56,9 @@ extension CarsViewController: UICollectionViewDataSource, UICollectionViewDelega
   }
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     if collectionView  == brandCollectionView {
-      return CGSize(width: 60, height: 60)
+      return CGSize(width: 80, height: 80)
     } else {
-      return CGSize(width: view.frame.width, height: 350)
+      return CGSize(width: view.frame.width, height: 500)
     }
   }
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
