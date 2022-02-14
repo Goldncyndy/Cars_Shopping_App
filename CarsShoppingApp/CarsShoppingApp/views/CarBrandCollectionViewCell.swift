@@ -18,8 +18,6 @@ class CarBrandCollectionViewCell: UICollectionViewCell {
     imageView.contentMode = .scaleAspectFit
     imageView.clipsToBounds = true
     imageView.translatesAutoresizingMaskIntoConstraints = false
-    imageView.heightAnchor.constraint(greaterThanOrEqualToConstant: 80).isActive = true
-    imageView.widthAnchor.constraint(greaterThanOrEqualToConstant: 80).isActive = true
     imageView.layer.cornerRadius =  imageView.frame.size.height/2
     return imageView
   }()
@@ -40,15 +38,15 @@ class CarBrandCollectionViewCell: UICollectionViewCell {
   func setUpViews() {
     addSubview(brandName)
     addSubview(productImageView)
-    productImageView.anchorWithConstantsToTop(top: topAnchor, left: leftAnchor, bottom: brandName.bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 30, rightConstant: 0)
+    productImageView.anchorWithConstantsToTop(top: topAnchor, left: leftAnchor, bottom: brandName.bottomAnchor, right: rightAnchor, topConstant: 6, leftConstant: 0, bottomConstant: 30, rightConstant: 0)
     
-    brandName.anchorWithConstantsToTop(top: productImageView.topAnchor, left: leftAnchor,
-                                       bottom: productImageView.bottomAnchor,
-                                       right: rightAnchor,
-                                       topConstant: 70,
-                                       leftConstant: 11,
-                                       bottomConstant: 0, rightConstant: -10)
-    brandName.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.50).isActive = true
+//    brandName.anchorWithConstantsToTop(top: productImageView.topAnchor, left: leftAnchor,
+//        bottom: productImageView.bottomAnchor, right: rightAnchor,
+//          topConstant: 70,leftConstant: 11,bottomConstant: 0, rightConstant: -10)
+    
+    brandName.topAnchor.constraint(equalTo: productImageView.topAnchor, constant: 65).isActive = true
+    brandName.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.25).isActive = true
+    brandName.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
   }
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")

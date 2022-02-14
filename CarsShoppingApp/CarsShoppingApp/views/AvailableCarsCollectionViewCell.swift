@@ -126,13 +126,13 @@ class AvailableCarsCollectionViewCell: UICollectionViewCell {
     productRateView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.05).isActive = true
     productRateView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.05).isActive = true
     addButton.anchorWithConstantsToTop(top: productRateView.bottomAnchor, left: leftAnchor,
-                                       bottom: bottomAnchor,right: rightAnchor,topConstant: 0,leftConstant: 330,
+                                       bottom: bottomAnchor,right: rightAnchor,topConstant: 0,leftConstant: 310,
                                        bottomConstant: 20, rightConstant: 0)
-    addButton.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.09).isActive = true
-    addButton.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.1).isActive = true
+    addButton.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.095).isActive = true
+    addButton.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.115).isActive = true
     
     productRateLabel.anchorWithConstantsToTop(top: productBrandTextView.bottomAnchor, left: leftAnchor,
-                                             bottom: bottomAnchor,right: rightAnchor,topConstant: 0,leftConstant: 325,
+                                             bottom: bottomAnchor,right: rightAnchor,topConstant: 0,leftConstant: 320,
                                              bottomConstant: 70, rightConstant: 0)
     productRateLabel.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.05).isActive = true
   }
