@@ -102,6 +102,14 @@ class CarsViewController: UIViewController {
     setupConstraints()
     productCollectionView.showsHorizontalScrollIndicator = false
     productCollectionView.showsVerticalScrollIndicator = false
+    
+    //MARK: ADD GESTURE RECOGNIZER TO DISMISS KEYBOARD
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+    view.addGestureRecognizer(tap)
+  }
+  //MARK: DISMISSING KEYBOARD FROM SCREEN AFTER TYPING
+  @objc func dismissKeyboard() {
+    view.endEditing(true)
   }
   // MARK: - SETUP VIEWS FUNCTION
   func addDefaultViews() {
